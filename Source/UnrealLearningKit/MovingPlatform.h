@@ -23,5 +23,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	UPROPERTY(EditAnywhere)
-	FVector MyVector = FVector(1.0,1.0,1.0);
+	FVector StarterPosition = FVector(4787,-23466, 5888);
+	FRotator StarterRotation = FRotator(0, 0, -30);
 };

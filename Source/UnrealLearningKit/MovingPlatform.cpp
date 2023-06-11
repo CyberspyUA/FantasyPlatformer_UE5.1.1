@@ -22,6 +22,11 @@ void AMovingPlatform::BeginPlay()
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	float PlarformPosition = StarterPosition.Z;
+	if (PlarformPosition >= 3600)
+	{
+		StarterPosition.Z -= 5;
+	}
+	SetActorLocation(StarterPosition);
 }
 
