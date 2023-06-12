@@ -22,7 +22,6 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	UPROPERTY(EditAnywhere)
-	FVector StarterPosition = FVector(4787,-23466, 5888);
-	FRotator StarterRotation = FRotator(0, 0, -30);
+	UPROPERTY(EditAnywhere, Category = "Moving Platform")
+	FVector PlatformVelocity = FVector(0, 100, 0);
 };
